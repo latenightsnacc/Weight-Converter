@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weight Converter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Weight Converter</h1>
+        <!--Form-->
+        <div class="form">
+            <form id="converter-form" name="converter-form">
+                <div class="form-row">
+                    <input id="weight-input" name="weight-input" type="text" placeholder="Enter your weight in figures">
+                </div>
+                <div id="input-error"></div>
+            </form>
+        </div>
+        <!--End-->
 
+        <!--Weight conversion(s)-->
+
+        <!--Grams-->
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Grams:</h3>
+                <div class="output" id="grams"></div>
+            </div>
+        </div>
+        <!--End-->
+
+         <!--Kilograms-->
+         <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Kilograms:</h3>
+                <div class="output" id="kilograms"></div>
+            </div>
+        </div>
+        <!--End-->
+
+         <!--Ounces-->
+         <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Ounces:</h3>
+                <div class="output" id="ounces"></div>
+            </div>
+        </div>
+        <!--End-->
+
+         <!--Pounds-->
+         <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Pounds:</h3>
+                <div class="output" id="pounds"></div>
+            </div>
+        </div>
+        <!--End-->
+
+        <!--Buttons-->
+        <div class="btns">
+            <!--Grams-->
+            <button onclick="gm()" class="btn" id="grams-btn">Grams</button>
+            <!--End-->
+
+            <!--Kilograms-->
+            <button onclick="kg()" class="btn" id="kilograms-btn">Kilograms</button>
+            <!--End-->
+
+            <!--Pounds-->
+            <button onclick="lbs()" class="btn" id="pounds-btn">Pounds</button>
+            <!--End-->
+
+            <!--Ounces-->
+            <button onclick="oz()" class="btn" id="ounces-btn">Ounces</button>
+            <!--End-->
+
+            <!--Clear-->
+            <button onclick="clear()" class="btn" id="clear-btn">Clear</button>
+            <!--End-->
+        </div>
+    </div>
+    <script src="./weight-converter.js"></script>
+</body>
+</html>
