@@ -1,4 +1,4 @@
-var weightValue = document.getElementById("weight-input").value;
+var weightValue = document.getElementById("weight-input");
 var error = document.getElementById("input-error");
 var grams = document.getElementById("grams");
 var kilograms = document.getElementById("kilograms");
@@ -6,62 +6,67 @@ var ounces = document.getElementById("ounces");
 var pounds = document.getElementById("pounds");
 
 function checkValue(){
-    if (isNaN(weightValue)){
-        error.innerText = "Only numbers allowed!";
-        grams.innerText = "";
-        kilograms.innerText = "";
-        ounces.innerText = "";
-        pounds.innerText = "";
+    if (isNaN(weightValue.value)){
+        error.innerHTML = "Only numbers allowed!";
+        grams.innerHTML = "";
+        kilograms.innerHTML = "";
+        ounces.innerHTML = "";
+        pounds.innerHTML = "";
     }
 }
 function gm(){
-   if (isNaN(weightValue)){
+   if (isNaN(weightValue.value)){
        checkValue();
    } else{
-       grams.innerText = weightValue;
-       kilograms.innerText = weightValue/1000;
-       ounces.innerText = weightValue/28.35;
-       pounds.innerText = weightValue/453.59237;
+        error.innerHTML = weightValue.value + " grams";
+       grams.innerHTML = weightValue.value;
+       kilograms.innerHTML = weightValue.value/1000;
+       ounces.innerHTML = weightValue.value/28.35;
+       pounds.innerHTML = weightValue.value/453.59237;
    } 
 }
 
 function kg(){
-    if (isNaN(weightValue)){
+    if (isNaN(weightValue.value)){
         checkValue();
     } else{
-        grams.innerText = weightValue * 1000;
-        kilograms.innerText = weightValue;
-        ounces.innerText = weightValue *  35.274;
-        pounds.innerText = weightValue * 2.205;
+        error.innerHTML = weightValue.value + " kilograms";
+        grams.innerHTML = weightValue.value * 1000;
+        kilograms.innerHTML = weightValue.value;
+        ounces.innerHTML = weightValue.value *  35.274;
+        pounds.innerHTML = weightValue.value * 2.205;
     } 
 }
 
 function oz(){
-    if (isNaN(weightValue)){
+    if (isNaN(weightValue.value)){
         checkValue();
     } else{
-        grams.innerText = weightValue * 28.3495;
-        kilograms.innerText = weightValue/35.274;
-        ounces.innerText = weightValue;
-        pounds.innerText = weightValue/16;
+        error.innerHTML = weightValue.value + " ounces";
+        grams.innerHTML = weightValue.value * 28.3495;
+        kilograms.innerHTML = weightValue.value/35.274;
+        ounces.innerHTML = weightValue.value;
+        pounds.innerHTML = weightValue.value/16;
     } 
 }
 
 function lbs(){
-    if (isNaN(weightValue)){
+    if (isNaN(weightValue.value)){
         checkValue();
     } else{
-        grams.innerText = weightValue * 453.592;
-        kilograms.innerText = weightValue/2.205;
-        ounces.innerText = weightValue *  16;
-        pounds.innerText = weightValue;
+        error.innerHTML = weightValue.value + " pounds";
+        grams.innerHTML = weightValue.value * 453.592;
+        kilograms.innerHTML = weightValue.value/2.205;
+        ounces.innerHTML = weightValue.value *  16;
+        pounds.innerHTML = weightValue.value;
     } 
 }
 
-function clear(){
-    error.innerText = "";
-    grams.innerText = "";
-    kilograms.innerText = "";
-    ounces.innerText = "";
-    pounds.innerText = "";
+function clr(){
+    weightValue.value = "";
+    error.innerHTML = "";
+    grams.innerHTML = "";
+    kilograms.innerHTML = "";
+    ounces.innerHTML = "";
+    pounds.innerHTML = "";
 }

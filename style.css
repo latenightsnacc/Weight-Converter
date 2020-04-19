@@ -6,6 +6,11 @@
 body{
     background-color: black;
     color: white;
+    overflow-x: hidden;
+}
+h1{
+    color: turquoise;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .wrapper{
     width: 100vw;
@@ -26,7 +31,7 @@ body{
 }
 div#input-error{
     padding: 10px 0;
-    color: red;
+    color: turquoise;
     font-size: 18px;
     font-weight: bold;
 }
@@ -38,6 +43,7 @@ div#input-error{
     width: 500px;
     border: 2px solid turquoise;
 }
+
 .btns{
     display: flex;
     width: 500px;
