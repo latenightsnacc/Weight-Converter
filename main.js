@@ -5,6 +5,9 @@ var kilograms = document.getElementById("kilograms");
 var ounces = document.getElementById("ounces");
 var pounds = document.getElementById("pounds");
 
+// please do well to comment your codes well and write good commit messages for your git
+
+// This function checks if input set in weightValue is a number and returns an error message if true. it sets all other inputs to empty string
 function checkValue(){
     if (isNaN(weightValue.value)){
         error.innerHTML = "Only numbers allowed!";
@@ -14,6 +17,8 @@ function checkValue(){
         pounds.innerHTML = "";
     }
 }
+
+// this function checks if an input set is a number, then converts this number to a gram equivalent
 function gm(){
    if (isNaN(weightValue.value)){
        checkValue();
@@ -26,6 +31,8 @@ function gm(){
    } 
 }
 
+
+// write a proper comment on this function and subsequent ones below...
 function kg(){
     if (isNaN(weightValue.value)){
         checkValue();
