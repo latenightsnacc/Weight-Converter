@@ -80,3 +80,4 @@ function clr(){
     ounces.innerHTML = "";
     pounds.innerHTML = "";
 }
+
