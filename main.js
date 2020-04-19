@@ -32,7 +32,7 @@ function gm(){
 }
 
 
-// write a proper comment on this function and subsequent ones below...
+// this function checks if an input set is a number, then converts this number to kilogram equivalent
 function kg(){
     if (isNaN(weightValue.value)){
         checkValue();
@@ -45,6 +45,7 @@ function kg(){
     } 
 }
 
+// this function checks if an input set is a number, then converts this number to ounce equivalent
 function oz(){
     if (isNaN(weightValue.value)){
         checkValue();
@@ -57,6 +58,7 @@ function oz(){
     } 
 }
 
+// this function checks if an input set is a number, then converts this number to pounds equivalent
 function lbs(){
     if (isNaN(weightValue.value)){
         checkValue();
@@ -69,6 +71,7 @@ function lbs(){
     } 
 }
 
+// this function clears all fields.
 function clr(){
     weightValue.value = "";
     error.innerHTML = "";
